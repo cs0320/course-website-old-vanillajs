@@ -449,7 +449,7 @@ table a:hover {
 
 
 .drawings-box {
-  padding-top: 4vh;
+  padding-top: 9vh;
 }
 
 .drawings-box img:hover {
@@ -585,6 +585,7 @@ footer a {
   position: fixed;
   top: 0;
   width: 100%;
+
   z-index: 100;
 }
 
@@ -641,6 +642,7 @@ footer a {
 @media (min-width: 768px) {
   .navbar-custom {
     /*  */
+    /* padding: 8px 0px; */
     padding-right: 65px;
     border-bottom: 0;
     letter-spacing: 1px;
