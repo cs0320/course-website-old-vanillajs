@@ -139,7 +139,7 @@ th {
   }
 
   iframe {
-    display: none;
+    display: flex;
   }
 
   /* Hide table headers (but not display: none;, for accessibility) */
@@ -449,7 +449,7 @@ table a:hover {
 
 
 .drawings-box {
-  padding-top: 4vh;
+  padding-top: 9vh;
 }
 
 .drawings-box img:hover {
@@ -762,7 +762,7 @@ footer {
   .intro-text {
     margin-top: 20px;
     font-size: 16px !important;
-    color: #000000 !important;
+    color: #f9f5da !important;
     text-shadow: none !important;
     letter-spacing: -0.02em;
   }
