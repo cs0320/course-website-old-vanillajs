@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="img/favicon.png" type="image/x-icon" />
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A website for cs0320 students at Brown University">
+    <meta name="author" content="cs0320 TA Staff">
+
+    <title>cs0320 | Brown University</title>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/cs32.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="img/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="http://fonts.googleapis.com/css?family=Lora|Montserrat:400,700" rel="stylesheet" type="text/css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://use.typekit.net/ykv7sgo.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div id="fix-this" style="overflow-x:hidden;">
+        <!-- Navigation -->
+        <nav class="navbar-custom" role="navigation">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div role="list" class="flex-row margin-centered toggle-flex">
+                <div class="large-hidden" id="navbar-open-button">
+                    <img src="img/hamburger.svg" alt="Open menu" />
+                </div>
+                <div class="hidden-weak large-hidden" id="navbar-close-button" style="color: white">
+                    x
+                </div>
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <div class="hidden"><a href="#page-top"></a></div>
+                <div class="flex-row align-center basis-33 small-hidden toggle-target small-flex-column">
+                    <div role="listitem" class="width-max"><a class="m-1 page-scroll" href="#course-info">Course
+                            Info</a></div>
+                    <div role="listitem" class="width-max"><a class="m-1 page-scroll"
+                            href="#docs-and-guides">Resources</a></div>
+                    <div role="listitem" class="width-max"><a class="m-1 page-scroll"
+                            href="#assignments">Assignments</a></div>
+                </div>
+                <div class="flex-row justify-center align-center basis-33 small-hidden toggle-target small-flex-column">
+                    <a href="#page-top" class="course-logo-font page-scroll">CSCI 0320</a>
+                </div>
+                <div class="flex-row align-center basis-33 small-hidden toggle-target small-flex-column">
+                    <div role="listitem" class="width-max"><a class="m-1 page-scroll" href="#lectures">Lectures</a>
+                    </div>
+                    <div role="listitem" class="width-max"><a class="m-1 page-scroll" href="#hours">Calendar</a></div>
+                    <div role="listitem" class="width-max"><a class="m-1 page-scroll" href="#staff">Staff</a></div>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+            <!-- /.container -->
+        </nav>
+
+        <!-- Tester Header -->
+        <!-- <section class="landing-bg">
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+        </section> -->
+
+        <header class="intro">
+            <div class="intro-body" style="
+            background: radial-gradient(ellipse at bottom, #251a50 0%, #1b0b5c 100%);
+  overflow: hidden;;
+        ">
+                <div id='stars'></div>
+                <div id='stars2'></div>
+                <div id='stars3'></div>
+                <!-- <div class="clouds"></div> -->
+
+                <div class="container">
+
+                    <div class="flex-col align-center">
+                        <div class="col col-md-8 justify-content-center drawings-box" style="width:100%;">
+                            <img id="home-moon" class="intro-img drawing" src="img/moon-white.png"
+                                style="border-radius:20px;width:15vw;">
+                            <img id="home-sun" class="intro-img drawing" src="img/sun-white.png"
+                                style="border-radius:20px;width:15vw;">
+                            <img id="home-planet" class="intro-img drawing" src="img/planet-white.png"
+                                style="border-radius:20px;width:15vw">
+                        </div>
+                        <h1 class="brand-heading" style="color: #f9f5da;padding-top: 0vh;">
+                            Introduction to Software Engineering
+                        </h1>
+                        <p class="intro-text" style="color: #f9f5da;">
+                            CSCI 0320 focuses on designing, building, testing, and maintaining systems collaboratively.
+                            It covers programming techniques (using Java and TypeScript with various frameworks),
+                            object-oriented design, advanced testing (e.g., fuzz testing), debugging approaches,
+                            and tools such as source control systems. The course concludes with a major group project
+                            that students gather requirements for, then design and implement themselves.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </header>
+    <img id="divider" class="divider" src="img/divider.png">
+
+    <!-- Intro Header -->
+    <!-- <header class="intro" style="height: 60vh;">
+            <div class="intro-body">
+                <div class="col col-md-8 justify-content-center drawings-box" style="width:100%;">
+                    <img id="home-moon" class="intro-img drawing" src="img/moon.png"
+                        style="border-radius:20px;width:25vw">
+                    <img id="home-sun" class="intro-img drawing" src="img/sun.png"
+                        style="border-radius:20px;width:25vw">
+                    <img id="home-planet" class="intro-img drawing" src="img/planet.png"
+                        style="border-radius:20px;width:25vw">
+                </div>
+            </div>
+        </div>
+    </header> -->
+    <!-- Course Information Section -->
+    <section id="course-info">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-title">Course Information
+                </h2>
+                <!--        <section id="course-info">-->
+                <!--            <div class="row section-header">-->
+                <!--                <div class="col-md-6 info-box-opaque">-->
+                <!--                    <h2>Course Information</h2>-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p>
+                        cs0320 is taught by <a href="http://www.cs.brown.edu/~tbn/">Tim Nelson</a>.
+                        Lectures are held every Tuesday and Thursday from 1:00 to 2:20 PM at
+                        <a href="http://brown.edu/Facilities/Facilities_Management/maps/index.php#building/METRSCHBLD">Metcalf
+                            Research Building AUD</a>,
+                        and are also recorded on <a
+                            href="https://brown.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22107a233a-0a7e-40bf-a371-af090025ed42%22">Panopto</a>
+                        and will be uploaded after each lecture.
+                    </p>
+                    <p>
+                        Official prerequisites for cs0320 include one of
+                        {<a href="https://cs.brown.edu/courses/csci0160/">cs0160</a>,
+                        <a href="https://cs.brown.edu/courses/csci0180/">cs0180</a>,
+                        <a href="https://cs.brown.edu/courses/csci0190/">cs0190</a>,
+                        <a href="https://cs.brown.edu/courses/csci0200/">cs0200</a>}.
+                        Familiarity with Java serves as a soft prerequisite; if you don't feel comfortable with Java
+                        or object-oriented programming yet,
+                        you may find it helpful to take
+                        <a href="https://cs.brown.edu/courses/csci0200/">cs0200</a> before taking cs0320.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <blockquote>
+                        "Software engineering is about more than just programming. Good engineers often spend more
+                        time reading and reviewing code than writing it. If you're skeptical, read <a
+                            href="https://linux.slashdot.org/story/20/07/03/2133201/linus-torvalds-i-do-no-coding-any-more">this
+                            short statement</a> by Linus Torvalds, one of the world's most famous programmers.
+                        <br><br>
+                        Linus isn’t on vacation. He's not taking it easy. And yet he
+                        spends most of his engineering time on reviewing other peoples' code. Let's stop pretending
+                        that "writing a lot of code" is the only metric that matters, and instead ask about what
+                        else should be important. Things like:
+                        <br><br>
+                        - How do you know that a program works? What if it's a program you didn't write?
+                        <br>
+                        - How do you know that you're writing the right program in the first place?
+                        <br>
+                        - How can you design to maximize the possibility of re-use?
+                        <br>
+                        - How can you make your code safe from bugs (yours and others')?
+                        <br>
+                        - How can you write code that's easy to understand?
+                        <br>
+                        - How do people write software collaboratively in a distributed way?
+                        <br>
+                        - Which unusual algorithmic ideas, new technologies, and linguistic tools should you know
+                        about as an engineer today?
+                        <br><br>
+                        This course is about all of that. You'll still write a lot of code, too, but we will
+                        embrace a more professional perspective. You're not just trying to pass the course's test
+                        suite;
+                        you’re trying to build software for real.
+                        "
+                    </blockquote>
+                    <tagline>– cs0320 Manifesto via the <a
+                            href="https://docs.google.com/document/d/1bCR2lARTl7yb7dbU1IzwB0Momm9tndoLqGAeTtc0Kpc/edit">Course
+                            Missive</a></tagline>
+                </div>
+            </div>
+
+            <!-- Documents & Guides -->
+            <div id="docs-and-guides" class="row inset-box">
+                <div class="info-box-opaque">
+                    <div class="col-md-8 col-sm-12">
+                        <h3 style="text-align: center;font-size: 3rem;">Resources</h3>
+                        <p>Check out the following useful documents for questions you have about course
+                            organization and logistics.</p>
+
+                        <ul class="col-md-12">
+                            <li><a target="_blank"
+                                    href="https://docs.google.com/document/d/1bCR2lARTl7yb7dbU1IzwB0Momm9tndoLqGAeTtc0Kpc">Course
+                                    Missive</a></li>
+                            <li><a target="_blank"
+                                    href="https://docs.google.com/document/d/1EkgvdBmDfqNhp4gPwG2PVys8lqqsrEmQp-9U8IX-DUc">Syllabus</a>
+                            </li>
+                            <li><a target="_blank"
+                                    href="https://www-oreilly-com.revproxy.brown.edu/library/view/effective-java/9780134686097/?ar">
+                                    Textbook
+                                </a></li>
+                            <li><a target="_blank"
+                                    href="https://docs.google.com/forms/d/e/1FAIpQLSeyulMQOMtSO4ACRA6epgLmQ931E4naYPWL53ukExM-2BLk3Q/viewform">Anonymous
+                                    Feedback</a></li>
+                            <li><a target="_blank" href='https://edstem.org/us/courses/28100'>edStem</a></li>
+                            <li><a target="_blank"
+                                    href='https://docs.google.com/document/d/1JzMFq1jziYO_WbVinJ4dnisaih_FPXsNnDyJdZRM-Lg/edit#heading=h.vdqfoknrw69p'>Setup
+                                    Guide</a></li>
+                            <li><a target="_blank"
+                                    href='https://docs.google.com/document/d/1DO_lA5n9C9jIFBhjgbFtOK5VbrgiAiNcduW8qUXCdeY/edit'>Documentation
+                                    and Style Guide</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <img id="divider" class="divider" src="img/divider.png">
+
+    <!-- Assignments Section -->
+    <section id="assignments">
+        <div class="container content-section">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Projects -->
+                    <h3 class="section-title">Projects</h3>
+                    <p>Project handouts are released at 2:20 PM ET on the specified release day.
+                        Code submissions are due in Gradescope by 7:30 PM ET on the specified code freeze date.
+                        Demos will take place sometime within the demo window, depending on your availabilities.
+                        Review assignments are out on 9:00 AM ET on the start date in the review window and are due by
+                        1:00 PM ET on the end date in the review window.</p>
+
+                    <p>For your handin to be graded, you must have completed the beginning of semester reading quiz. To
+                        check if you have turned one in, please check <a href="https://forms.gle/EPSWAKjUh73mwd9s6">this
+                            form</a>.
+                    </p>
+                    <table class="assignment">
+                        <tr>
+                            <th>Project</th>
+                            <th>Release</th>
+                            <th>Code Freeze</th>
+                            <th>Demos</th>
+                            <th>Review</th>
+                        </tr>
+                        <tr>
+                            <td><a
+                                    href="https://docs.google.com/document/d/1zX5EdR5Vta8qv2DrmOxImJc5aivsUZuPRAoWZd7ZelQ">Sprint
+                                    0: CSV</a></td>
+                            <td>9/8</td>
+                            <td>9/16</td>
+                            <td>9/17–9/18</td>
+                            <td><a
+                                    href="https://docs.google.com/document/d/1srAwvp8ZmVXGmYYdZyZBKVvd2DUkMdK0xXz6iu0Bgl4">9/19–9/22</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a
+                                    href="https://docs.google.com/document/d/1LEfBf03lTHHX1K6oVQcqwuhXhVCgYJNcT8tGceK0Tbk/edit#heading=h.pee6crlpaxz6">Sprint
+                                    1: Echo</a></td>
+                            <td>9/22</td>
+                            <td>9/30</td>
+                            <td>10/1–10/2</td>
+                            <td><a
+                                    href="https://docs.google.com/document/d/1IaLxFGFZLBqf58JKpYJs1LzptrPAz0QQKar7oRv1vYE/edit">10/3–10/6</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://docs.google.com/document/d/117nS979S6vtXeS4oznTpmZ9tJ_7nKanpCTeyTgAZvnU/edit#heading=h.pee6crlpaxz6">Sprint 2: API Proxy</a></td>
+                            <td>10/6</td>
+                            <td>10/14</td>
+                            <td>10/15–10/16</td>
+                            <td><a href="https://docs.google.com/document/d/1c1SBNB8uZU5pAQyo970TvLy6qPUIrGis3jtGKZWilpY/edit">10/17–10/20</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://docs.google.com/document/d/18lnw9hxohjg-hdok2fKi_N1i3O7C1LTKleuxFesOdVU/edit">Sprint 3: Terminal</a></td>
+                            <td>10/20</td>
+                            <td>10/28</td>
+                            <td>10/29–10/30</td>
+                            <td><a href="https://docs.google.com/document/d/1wd7opQNTwxq1vXZ6XXNPC442eKgFnFFghjUW9qn53gY/edit">10/31–11/4</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://docs.google.com/document/d/1GOSuDQbqZuJXC8TnjMZIUSsywmROb76HyT6X3KdDh5U/edit">Integration: Maps</a></td>
+                            <td>11/5</td>
+                            <td>11/11</td>
+                            <td>11/12–11/13</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://docs.google.com/document/d/1_dgg39ume4JJnCgLbWDWovkKE8EjDDaPnYY7LM3sSuA/edit">Term Project</a></td>
+                            <td></td>
+                            <td></td>
+                            <td>12/19–12/21</td>
+                            <td>N/A</td>
+                        </tr>
+                    </table>
+
+                    <h3 class="section-title">Gear-ups</h3>
+                    <p>
+                        Gear-ups are interactive, lecture-style sections led by TAs that reinforce content from lecture
+                        with a specific emphasis on applying concepts to the current sprint. Gear-ups are held on the
+                        Thursday and Friday after each project's release. Attendance is mandatory, and gear-up sections
+                        will be assigned after shopping period ends. You can find the schedule for gear-up sections on
+                        <a href="#hours">the calendar</a>.
+                    </p>
+                    <table class="gear-up">
+                        <tr>
+                            <th>Date</th>
+                            <th>Topic</th>
+                            <th>Slides</th>
+                            <th>Recording</th>
+                            <th>Resources</th>
+                        </tr>
+                        <tr>
+                            <td>9/8–9/9</td>
+                            <td>Sprint 0: CSV</td>
+                            <td><a
+                                    href="https://docs.google.com/presentation/d/1Xq8RDXszudAcaVNwrBOKW3nnXL4LdbzDTuiin6tAKpQ">Slides</a>
+                            </td>
+                            <td><a
+                                    href="https://drive.google.com/file/d/1bP90OIa-BmWxW6iqoNv5fQQHw9AKVlvq/view?usp=sharing">Recording</a>
+                            </td>
+                            <td>–</td>
+                        </tr>
+                        <tr>
+                            <td>9/22–9/23</td>
+                            <td>Sprint 1: Echo</td>
+                            <td><a
+                                    href="https://docs.google.com/presentation/d/1fmus69S74PzEBC134IqHVp7JPB7dZYWo2M-Dv4BzBZs">Slides</a>
+                            </td>
+                            <td>N/A (demos are on the slides)</td>
+                            <td>–</td>
+                        </tr>
+                        <tr>
+                            <td>10/6–10/7</td>
+                            <td>Sprint 2: Server</td>
+                            <td><a
+                                    href="https://docs.google.com/presentation/d/1SFRdLDdomw1HdmH43qiGCmUSaorQwNudF1lVBq2k7h8">Slides</a>
+                            </td>
+                            <td><a
+                                    href="https://drive.google.com/file/d/1vGaWQ06uDBsdizD7jOm8Nk6LULpAW7Jr">Recording</a>
+                            </td>
+                            <td>–</td>
+                        </tr>
+                        <tr>
+                            <td>10/20–10/21</td>
+                            <td>Sprint 3: Terminal</td>
+                            <td><a
+                                    href="https://docs.google.com/presentation/d/1JGUajeVAWHE_yh6Ox0sU6pAkobSBCJ3XtfIjezJLSQg">Slides</a>
+                            </td>
+                            <td><a
+                                    href="https://drive.google.com/file/d/19GGLBzTIhpJgzCzEouRtlYzxrISD9RKf">Recording</a>
+                            </td>
+                            <td>–</td>
+                        </tr>
+                        <tr>
+                            <td>11/3–11/4</td>
+                            <td>Sprint 4: Integration</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td><a href="https://docs.google.com/document/d/1ohKCZ61DqAHfaQIT8PUjQ5GYvJR_d5OG9jd8s_3q3yk/edit#heading=h.2icarylx3dq3">Using React-map-gl</a></td>
+                        </tr>
+                        <tr>
+                            <td>11/3–11/4</td>
+                            <td>Term Project</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>—</td>
+                            <td>Prototyping (Optional)</td>
+                            <td><a href="https://docs.google.com/document/d/108rgVNfvTxj1oCNYpgmyCpz6r0CTHDEbVSq7tb2c-g0/edit">Handout</a></td>
+                            <td>–</td>
+                            <td></td>
+                            
+
+                        </tr>
+
+                    </table>
+                    <h3 class="section-title">Discussion Sections</h3>
+                    <p>
+                        Discussion sections are optional sessions facilitated by our STAs that involve critical
+                        investigation and debate on topics at the intersection of software engineering and ethics.
+                        To be considered for an S with Distinction, you must attend and participate in both of these
+                        sections. You can find the schedule for discussion sections on
+                        <a href="#hours">the calendar</a>.
+                    </p>
+                    <table class="gear-up">
+                        <tr>
+                            <th>Date</th>
+                            <th>Topic</th>
+                            <th>Slides</th>
+                            <th>Recording</th>
+                        </tr>
+                        <tr>
+                            <td>TBD</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>–</td>
+                        </tr>
+
+                        <tr>
+                            <td>TBD</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>–</td>
+                        </tr>
+                    </table>
+
+                    <h3 class="section-title">Collab Sections</h3>
+                    <p>In collab sections, students will bring their bugs to a room of other classmates assigned to
+                        serve as their debugging partners and, in pairs, go through the <a
+                            href="https://hackmd.io/@brown-csci0320/BJKCtyxxs">debugging recipe</a> (explored in
+                        lecture-note form in the <a href="https://hackmd.io/@brown-csci0320/H1ONPLN25">debugging
+                            manifesto</a>) to practice debugging together. The goal is to give students the scaffolding
+                        necessary to grow their debugging, communication, and collaboration skills while under
+                        the supervision of the course staff.</p>
+
+                    <p>Every student is required to serve one hour per week as a debugging partner. Collab sections will
+                        be assigned after shopping period ends. You can find the schedule for collab sections on
+                        <a href="#hours">the calendar</a>.
+                    </p>
+
+                    <p>You can find the Collab Section Student Guide at the link below,
+                        which details the workflow for coming to collab section for help as well as the workflow for
+                        serving as a debugging partner.</p>
+                    <br>
+                    <div class="button-container" style="display: flex; justify-content:center">
+                        <a href="https://docs.google.com/document/d/11xB9JKLphIVKv8-bO2HQF8f5wnGEZzudGBs0vIk24RA/edit#"
+                            target="_blank">
+                            <div class="debugging-button">
+                                Collab Section Student Guide
+                            </div>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyUTHWjtGZ9i0p2AE59MHNn_s6ebu4iSem_M7fUqJBtRdZhw/viewform"
+                            target="_blank">
+                            <div class="debugging-button">
+                                Collab Section Debugging Form
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lectures -->
+
+    <section id="lectures">
+        <div class="container content-section">
+            <div class="row">
+                <div>
+                    <h2 class="section-title">Lectures</h2>
+                    <div class="col-md-12">
+                        <p>Lectures are held every Tuesday and Thursday from 1:00 PM to 2:20 PM ET at
+                            <a
+                                href="http://brown.edu/Facilities/Facilities_Management/maps/index.php#building/METRSCHBLD">Metcalf
+                                Research Building AUD</a>,
+                            and are also recorded on <a
+                                href="https://brown.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22107a233a-0a7e-40bf-a371-af090025ed42%22">Panopto</a>
+                            and will be uploaded after each lecture.
+                        </p>
+                        <p>Any readings from Effective Java and Design Patterns can be accessed through Safari Books
+                            Online.
+                            To do so, follow the steps below:
+                        <ol>
+                            <li> Navigate <a href="https://www.oreilly.com/library/view/temporary-access/"
+                                    target="_blank" rel="noopener noreferrer">here</a> to setup your Brown affiliated
+                                account.
+                            </li>
+                            <li> Once you've done this, you can access the readings for
+                                <a href="https://learning.oreilly.com/library/view/effective-java-3rd/9780134686097/"
+                                    target="_blank" rel="noopener noreferrer">Effective Java</a>
+                                and <a
+                                    href="https://learning.oreilly.com/library/view/design-patterns-elements/0201633612/"
+                                    target="_blank" rel="noopener noreferrer">Design Patterns</a>.
+                            </li>
+                        </ol>
+                        </p>
+                        <table class="lecture">
+                            <tr>
+                                <th>Date<span style="white-space: pre;"> </span></th>
+                                <th>Topic</th>
+                                <th>Resources</th>
+                                <th>Code</th>
+                                <th>Week's Reading</th>
+                            </tr>
+                            <tr>
+                                <td>9/8<span style="white-space: pre;"> </span></td>
+                                <td>Success in cs0320</td>
+                                <td><a href="https://hackmd.io/@brown-csci0320/HJp3-RJes">Notes</a></td>
+                                <td><a
+                                        href="https://github.com/cs0320/class-livecode/tree/main/F22/mostCommonGeneric">Livecode</a>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>9/13<span style="white-space: pre;"> </span></td>
+                                <td>Testing, Strategies, and the Debugging Recipe</td>
+                                <td><a href="https://hackmd.io/@brown-csci0320/SJCw5eAxo">Notes</a></td>
+                                <td><a
+                                        href="https://github.com/cs0320/class-livecode/tree/main/F22/seatingSorting">Livecode</a>
+                                </td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+                                <td>9/15<span style="white-space: pre;"> </span></td>
+                                <td>Meddling With Median: More Testing, Strategies, and Functions</td>
+                                <td><a href="https://hackmd.io/@brown-csci0320/ry7ochlWi">Notes</a></td>
+                                <td><a
+                                        href="https://github.com/cs0320/class-livecode/tree/main/F22/specifyingMedian_TestingExceptions">Livecode</a>
+                                </td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+                                <td>9/20<span style="white-space: pre;"> </span></td>
+                                <td>Sprint 0 Review, Static HTML/CSS Primer</td>
+                                <td><a href="https://hackmd.io/@brown-csci0320/BySAQVvbs">Notes</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>9/22<span style="white-space: pre;"> </span></td>
+                                <td>Let’s Build A Webapp (Part 1)</td>
+                                <td><a href="https://hackmd.io/@brown-csci0320/H1aNS1cbj">Notes</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>9/27<span style="white-space: pre;"> </span></td>
+                                <td>Let’s Build A Webapp (Part 2)</td>
+                                <td><a href="https://hackmd.io/@brown-csci0320/H1aNS1cbj">Notes</a></td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>9/29<span style="white-space: pre;"> </span></td>
+                                <td>Fuzz Testing and Building a REPL</td>
+                                <td><a href="https://hackmd.io/@brown-csci0320/SysDlzmzo">Notes</a></td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>10/4<span style="white-space: pre;"> </span></td>
+                                <td>Sprint 1 Review and Web APIs</td>
+                                <td><a href="https://hackmd.io/@brown-csci0320/S1xGe6Kzs">Notes</a></td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>10/6<span style="white-space: pre;"> </span></td>
+                                <td>Defensive Programming and Proxies (Defensive and Otherwise)</td>
+                                <td><a href="https://hackmd.io/@brown-csci0320/ryQVld2Mi">Notes</a></td>
+                                <td> </td>
+                                <td>Effective Java: Chapter 3, items 10, 11, and 12</td>
+                            </tr>
+                            <tr>
+                                <td>10/11<span style="white-space: pre;"> </span></td>
+                                <td>Code Shapes, Concurrency (Java), and Bonus Generics</td>
+                                <td><a href="https://hackmd.io/@brown-csci0320/ryBfJi5gq">Notes</a></td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>10/13<span style="white-space: pre;"> </span></td>
+                                <td>Code Shapes, Concurrency (Java), and Bonus Generics</td>
+                                <td><a href="https://hackmd.io/@brown-csci0320/ryBfJi5gq">Notes</a></td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>10/18<span style="white-space: pre;"> </span></td>
+                                <td>Type/JavaScript Concurrency</td>
+                                <td><a href="https://hackmd.io/@brown-csci0320/B1sSAN2Xo">Notes</a></td>
+                                <td> </td>
+                                <td>Effective Java: Concurrency, item 1</td>
+                            </tr>
+                            <tr>
+                                <td>10/20<span style="white-space: pre;"> </span></td>
+                                <td>Reacting to React</td>
+                                <td><a href="https://hackmd.io/@brown-csci0320/ryTvcRC7i">Notes</a></td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>10/25<span style="white-space: pre;"> </span></td>
+                                <td>UI Testing Part 1: React Testing Library</td>
+                                <td><a href="https://hackmd.io/@brown-csci0320/HJv3fDBNj">Notes</a></td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>10/27<span style="white-space: pre;"> </span></td>
+                                <td>Emmanuel Schanzer Guest Lecture</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>11/1<span style="white-space: pre;"> </span></td>
+                                <td>Sprint 3 Review, Term Project Demo and Discussion</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>11/3<span style="white-space: pre;"> </span></td>
+                                <td>User Stories, Mocking, and Requirements</td>
+                                <td><a href="https://docs.google.com/presentation/d/1-AB5e65ePJxdrBMOILZ35heacSXaiCWV2bS4fbfiGdI/edit#slide=id.gecdd5ab10c_0_55">Slides</a></td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>11/8<span style="white-space: pre;"> </span></td>
+                                <td>No class: U.S. election day</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>11/10<span style="white-space: pre;"> </span></td>
+                                <td>Property-based testing, Guest: Sara Hartse</td>
+                                <td> </td>
+                                <td><a href="https://github.com/cs0320/class-livecode/tree/main/F22/mbt_pbt">Livecode</a></td>
+                                <td><a href="https://randomascii.wordpress.com/2014/01/27/theres-only-four-billion-floatsso-test-them-all/">Blog Post</a></td>
+                            </tr>
+                            <tr>
+                                <td>11/15<span style="white-space: pre;"> </span></td>
+                                <td>Maps review, Guest: Sam Dooman</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>11/17<span style="white-space: pre;"> </span></td>
+                                <td>Threat modeling (optional: agile 0320)</td>
+                                <td><a href="https://docs.google.com/presentation/d/15vDGq7F_o2xb7ZidwIiBFNLXfOn6VKAlJ0iRf77M_nY/edit#slide=id.g190fa59a1a3_0_2">Slides</a></td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>11/22<span style="white-space: pre;"> </span></td>
+                                <td>Optional: learning a thing with Tim (topic by request!)</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>11/24<span style="white-space: pre;"> </span></td>
+                                <td>No class: November break</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>11/29<span style="white-space: pre;"> </span></td>
+                                <td>End-to-end Test Automation and Continuous Integration</td>
+                                <td><a href="https://hackmd.io/@brown-csci0320/S1SOw9mwo">Notes</a></td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>12/1<span style="white-space: pre;"> </span></td>
+                                <td>Beyond Testing and Final Words</td>
+                                <td><a href="https://hackmd.io/@brown-csci0320/HJXa5LSHc">Notes</a></td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>12/6<span style="white-space: pre;"> </span></td>
+                                <td>Guest: Heather Wiencko</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>12/8<span style="white-space: pre;"> </span></td>
+                                <td>No class (reading period)</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>12/13<span style="white-space: pre;"> </span></td>
+                                <td>No class (finals period)</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>12/15<span style="white-space: pre;"> </span></td>
+                                <td>No class (finals period)</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>12/20<span style="white-space: pre;"> </span></td>
+                                <td>No class (finals period)</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <!-- 
+                             -->
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Hours -->
+    <section id="hours">
+        <div class="container content-section">
+            <h2 class="section-title">Calendar</h2>
+            <div class="row">
+
+                <!-- Regular hours -->
+                <div class="col-md-12">
+                    <div class="hours-container">
+                        <iframe
+                            src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=c_vq129869vohua9sciatui9o74c%40group.calendar.google.com&amp;src=c_00id9i4gpghgnkm2v2j515u4i8%40group.calendar.google.com&amp;src=c_96fecqid2bmbhs4mancf9mphvs%40group.calendar.google.com&amp;src=c_or8rvbpp1eg0m6qubhpcoq2088%40group.calendar.google.com&amp;color=%23D50000&amp;color=%234285F4&amp;color=%23A79B8E&amp;color=&amp;color=%23E4C441&amp;mode=WEEK"
+                            style="border:solid 1px #777;margin: 2em;" width="100%" height="650" frameborder="0"
+                            scrolling="no"></iframe>
+                    </div>
+                    <h3 class="section-title">Talk to Tim</h3>
+                    <p>
+                        Talk to Tim via <a href="https://brown.zoom.us/my/tim.browncs">Zoom</a> on Thursday from 12
+                        PM–12:50 PM EST.
+                        Tim will also be holding an info session during the first week of class on Friday.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff -->
+    <section id="staff">
+        <div class="container content-section staff">
+            <h2 class="section-title">Staff </h2>
+            <h3>Professor</h3>
+            <div class="email"><a href="mailto:tbn@cs.brown.edu">tbn@cs.brown.edu</a></div>
+
+            <div class="staff-flexbox">
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/tim.jpg">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">Tim Nelson</div>
+                                <div class="ta-card-login">tbn</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">Tim Nelson</div>
+                                <div class="ta-card-pronouns">he/they</div>
+                                <div class="ta-card-zodiac">Sagittarius</div>
+                                <div class="ta-card-hometown">Hometown: wherever the strategy pattern is used</div>
+                                <div class="ta-card-bio">Bio: is mysterious</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Head TAs</h3>
+            <div class="email"><a href="mailto:cs0320headtas@lists.brown.edu">cs0320headtas@lists.brown.edu</a></div>
+            <div class="staff-flexbox">
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/colton.jpg">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">Colton Rusch</div>
+                                <div class="ta-card-login">crusch</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">Colton Rusch</div>
+                                <div class="ta-card-pronouns">he/him</div>
+                                <div class="ta-card-zodiac">Aries</div>
+                                <div class="ta-card-hometown">Hometown: Tewksbury, MA</div>
+                                <div class="ta-card-bio">
+                                    Hey! I'm a Senior studying Music + CS. This is my fourth time HTAing 32, and I think
+                                    this will be the best iteration of the course yet [:
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/eva.jpg">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">Eva Lau</div>
+                                <div class="ta-card-login">elau5</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">Eva Lau</div>
+                                <div class="ta-card-pronouns">she/her</div>
+                                <div class="ta-card-zodiac">Sagittarius</div>
+                                <div class="ta-card-hometown">Hometown: Waltham, MA</div>
+                                <div class="ta-card-bio">Hi everyone! I'm a senior studying visa + cs, an avid notion
+                                    user with a love for movie nights, and I'm super excited to meet you all:)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>Joint UTA/STA</h3>
+            <div class="staff-flexbox">
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/galen.png">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">Galen Winsor</div>
+                                <div class="ta-card-login">gwinsor</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">Galen Winsor</div>
+                                <div class="ta-card-pronouns">he/him</div>
+                                <div class="ta-card-zodiac">Aries</div>
+                                <div class="ta-card-hometown">Hometown: Northampton, Massachusetts</div>
+                                <div class="ta-card-bio">
+                                    Good evening (⌐■_■)! I'm a senior concentrating in CS and environmental studies. I
+                                    love
+                                    writing and playing music with other people, and starting (and usually never
+                                    finishing)
+                                    creative projects. I'm so excited to meet you all!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>STA</h3>
+            <div class="staff-flexbox">
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/caziah.jpg">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">Caziah Mayers</div>
+                                <div class="ta-card-login">cmayers</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">Caziah Mayers</div>
+                                <div class="ta-card-pronouns">They/them</div>
+                                <div class="ta-card-zodiac">Aries</div>
+                                <div class="ta-card-hometown">Hometown: Brooklyn, New York
+                                </div>
+                                <div class="ta-card-bio">
+                                    Computer Science and Africana Studies double concentrator. Part-time skater,
+                                    Full-time nerd.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>UTAs</h3>
+            <div class="staff-flexbox">
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/sam.jpg">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">Sam Gundotra</div>
+                                <div class="ta-card-login">sgundotr</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">Sam Gundotra</div>
+                                <div class="ta-card-pronouns">she/her</div>
+                                <div class="ta-card-zodiac">Aquarius</div>
+                                <div class="ta-card-hometown">Hometown: Los Gatos, CA</div>
+                                <div class="ta-card-bio">
+                                    Hi I'm Sam and I'm a junior studying CS! I enjoy collaging and watching Love Island
+                                    UK or generic rom coms on my free time :) I'm also an astrology enthusiast so let me
+                                    know if you want to talk birth charts. I'm excited to meet you all!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/alan.jpg">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">Alan Chen</div>
+                                <div class="ta-card-login">achen258</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">Alan Chen</div>
+                                <div class="ta-card-pronouns">he/him/his</div>
+                                <div class="ta-card-zodiac">Capricorn</div>
+                                <div class="ta-card-hometown">Hometown: Rockville, MD
+                                </div>
+                                <div class="ta-card-bio">
+                                    { <br>
+                                    "name" : "Alan", <br>
+                                    "class" : 2025, <br>
+                                    "major" : "CS + APMA", <br>
+                                    "hobbies" : ["swimming", "math", "music", "anime", "cooking"] <br>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/siming.jpg">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">Siming Feng</div>
+                                <div class="ta-card-login">sfeng22</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">Siming Feng</div>
+                                <div class="ta-card-pronouns">he/him</div>
+                                <div class="ta-card-zodiac">Scorpio</div>
+                                <div class="ta-card-hometown">Hometown: Beijing, China
+                                </div>
+                                <div class="ta-card-bio">
+                                    Hey everyone! I'm a sophomore studying computer science and math. In my free time, I
+                                    enjoy playing video games, reading manga, and singing :D
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/david-f.jpg">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">David Fryd</div>
+                                <div class="ta-card-login">dfryd</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">David Fryd</div>
+                                <div class="ta-card-pronouns">he/him</div>
+                                <div class="ta-card-zodiac">Pisces</div>
+                                <div class="ta-card-hometown">Hometown: Miami Beach, FL
+                                </div>
+                                <div class="ta-card-bio">
+                                    Hey everyone! I'm David, and I'm a transfer second-semester junior studying CS. I
+                                    love making music, photography, and SCUBA diving. Really excited to meet you all! :)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/robert.jpg">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">Robert Koch</div>
+                                <div class="ta-card-login">rkoch2</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">Robert Koch</div>
+                                <div class="ta-card-pronouns">he/him</div>
+                                <div class="ta-card-zodiac">Libra</div>
+                                <div class="ta-card-hometown">Hometown: Chicago, IL
+                                </div>
+                                <div class="ta-card-bio">
+                                    Hey everyone! I'm Robert, a junior from Chicago concentrating in CS. In my free
+                                    time, I like swimming, playing video games, and going out to eat. Looking forward to
+                                    meeting you all!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/riya.jpg">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">Riya Dulepet</div>
+                                <div class="ta-card-login">rdulep</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">Riya Dulepet</div>
+                                <div class="ta-card-pronouns">She/her/hers</div>
+                                <div class="ta-card-zodiac">Aquarius</div>
+                                <div class="ta-card-hometown">Hometown: Los Angeles, CA
+                                </div>
+                                <div class="ta-card-bio">
+                                    Hi! Im a senior concentrating in CS. My greatest pleasures in life include stuffing
+                                    my face in some good food, spending time with friends, and binging Netflix. Excited
+                                    to meet you all!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/alex.jpg">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">Alex Bao</div>
+                                <div class="ta-card-login">abao5</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">Alex Bao</div>
+                                <div class="ta-card-pronouns">he/him</div>
+                                <div class="ta-card-zodiac">Libra</div>
+                                <div class="ta-card-hometown">Hometown: Milton, MA
+                                </div>
+                                <div class="ta-card-bio">
+                                    Hey I'm a junior studying cs. Outside of class you can find me in the CIT because
+                                    I'm a fun person. I enjoy watching f1 and listening to kpop.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/michael.jpg">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">Michael Youssef</div>
+                                <div class="ta-card-login">myousse2</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">Michael Youssef</div>
+                                <div class="ta-card-pronouns">he/him</div>
+                                <div class="ta-card-zodiac">Virgo</div>
+                                <div class="ta-card-hometown">Hometown: Hopkinton, MA
+                                </div>
+                                <div class="ta-card-bio">
+                                    I'm a sophomore concentrating in comp sci. I am an avid chocolate + coffee consumer
+                                    (I can't stand tea though), and I also enjoy baking. A fun fact about me is that I
+                                    grew up trilingual (russian, arabic, english) when I was really young but forgot a
+                                    lot of my speaking skills.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/april.jpg">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">April Xu</div>
+                                <div class="ta-card-login">axu58</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">April Xu</div>
+                                <div class="ta-card-pronouns">she/her</div>
+                                <div class="ta-card-zodiac">Aries</div>
+                                <div class="ta-card-hometown">Hometown: Frisco, Texas
+                                </div>
+                                <div class="ta-card-bio">
+                                    Hey there ¨̮ ! I’m a junior studying CS. In my free time, I like watching videos
+                                    essays about random movies or video games on YouTube. Recently, I have been enjoying
+                                    hour-long videos of people walking around in cities that I hope to visit one day.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/jacob.jpg">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">Jacob Axel</div>
+                                <div class="ta-card-login">jaxel</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">Jacob Axel</div>
+                                <div class="ta-card-pronouns">he/him/his</div>
+                                <div class="ta-card-zodiac">Pisces</div>
+                                <div class="ta-card-hometown">Hometown: nyc
+                                </div>
+                                <div class="ta-card-bio">
+                                    Hey! I’m a senior from nyc studying apma + cs. Outside of the classroom I enjoy
+                                    playing tennis, cooking, and have recently been getting back into casual games of
+                                    poker and chess.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/jordan.jpg">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">Jordan Walendom</div>
+                                <div class="ta-card-login">jwalendo</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">Jordan Walendom</div>
+                                <div class="ta-card-pronouns"></div>
+                                <div class="ta-card-zodiac">Aries</div>
+                                <div class="ta-card-hometown">Hometown: Abidjan, Cote D’Ivoire
+                                </div>
+                                <div class="ta-card-bio">
+                                    Hi! My names Jordan and I love playing soccer and listening to music. I’m looking
+                                    forward to TAing 32 this semester!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/david-y.jpg">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">David Young</div>
+                                <div class="ta-card-login">dyoung13</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">David Young</div>
+                                <div class="ta-card-pronouns">he/him</div>
+                                <div class="ta-card-zodiac">Cancer</div>
+                                <div class="ta-card-hometown">Hometown: Boca Raton
+                                </div>
+                                <div class="ta-card-bio">
+                                    I'm a senior concentrating in CS from a small city in Florida. When not coding, I
+                                    can be found oversleeping or drinking inordinate amounts of sparkling water. Looking
+                                    forward to meeting you all!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/kazen.jpg">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">Kazen Gallman</div>
+                                <div class="ta-card-login">kgallman</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">Kazen Gallman</div>
+                                <div class="ta-card-pronouns">he/him</div>
+                                <div class="ta-card-zodiac">Aries</div>
+                                <div class="ta-card-hometown">Hometown: North Kingstown, RI
+                                </div>
+                                <div class="ta-card-bio">
+                                    Hello! I'm a junior studying CS and Cog Neuro, in my free time i'm probably playing
+                                    video games, reading manga, or sleeping, but I also like to make really bad
+                                    websites, <a href="https://kazar4.com">https://kazar4.com</a> :D
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/vignesh.jpg">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">Vignesh Pandiarajan</div>
+                                <div class="ta-card-login">vpandiar</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">Vignesh Pandiarajan</div>
+                                <div class="ta-card-pronouns">he/him</div>
+                                <div class="ta-card-zodiac">Aquarius</div>
+                                <div class="ta-card-hometown">Hometown: San Ramon
+                                </div>
+                                <div class="ta-card-bio">
+                                    Spicy food connoisseur. Loves cheese, but cursed with lactose intolerance.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/mitchell.jpg">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">Mitchell Salomon</div>
+                                <div class="ta-card-login">msalomo2</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">Mitchell Salomon</div>
+                                <div class="ta-card-pronouns">he/him</div>
+                                <div class="ta-card-zodiac">Libra</div>
+                                <div class="ta-card-hometown">Hometown: Barrington, RI
+                                </div>
+                                <div class="ta-card-bio">
+                                    Hello! I'm a sophomore studying computer science (and possibly APMA). I love rock
+                                    climbing and playing strategy games like Catan or EU4 in my free time.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container text-center">
+                <p>
+                    &copy; Fall 2022 cs0320 TA Staff
+                    <span class="spacing">|</span>
+                    <a href="http://cs.brown.edu">Computer Science Department</a>
+                    <span class="spacing">|</span>
+                    <a href="http://brown.edu">Brown University</a>
+                </p>
+            </div>
+        </footer>
+
+        <!-- Javascript files -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/cs32.js"></script>
+        </div>
+</body>
+
+</html>
