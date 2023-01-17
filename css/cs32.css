@@ -743,6 +743,36 @@ footer {
   color: #1b0b5c;
 }
 
+.intro-button {
+  /* width: 60vw;
+  height: 10vw;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 20px; */
+
+
+  align-items: center;
+  
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+  display: flex;
+  /* font-family: Poppins; */
+  font-weight: 400;
+  margin-top: 32px;
+  padding: 6px 35px;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+  z-index: 200;
+  color:#1b0b5c;
+  cursor: pointer;
+}
+
+.intro-button:hover {
+  color:#1b0b5c;
+  transform: scale(1.1);
+}
+
 .intro-body {
   font-size: 16px;
   color: #1b0b5c;
