@@ -339,6 +339,10 @@ th {
   }
 }
 
+#navbar-open-button {
+  
+}
+
 #navbar-open-button img {
   width: 45px;
 }
@@ -350,6 +354,33 @@ th {
 #navbar-close-button:hover {
   cursor: pointer;
   color: #d6d2da;
+}
+
+#mobile-navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  flex-direction: row;
+}
+
+#mobile-open-icon {
+  width: 2rem; 
+  fill: #d6d2da;
+  /* margin-right: 30rem; */
+  margin-top: 0.4rem;
+}
+
+#mobile-close-icon {
+  width: 1.8rem; 
+  fill: #d6d2da;
+  /* margin-right: 30rem; */
+  /* margin-top: 1rem; */
+}
+
+#mobile-title {
+
 }
 
 .info-box-opaque {
@@ -576,7 +607,7 @@ footer a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: capitalize;
   font-weight: 600;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   background-color: #1b0b5c;
   height: max-content;
@@ -641,6 +672,8 @@ footer a {
 @media (min-width: 768px) {
   .navbar-custom {
     /*  */
+  display: flex;
+
     padding-right: 65px;
     border-bottom: 0;
     letter-spacing: 1px;
@@ -662,6 +695,7 @@ footer a {
     -webkit-transition: background 0.2s ease-in-out, padding 0.2s ease-in-out;
     -moz-transition: background 0.2s ease-in-out, padding 0.2s ease-in-out;
     transition: background 0.2s ease-in-out, padding 0.2s ease-in-out;
+    font-size: 1.5em;
   }
   .section-title {
     padding-top: 10px;
@@ -744,27 +778,19 @@ footer {
 }
 
 .intro-button {
-  /* width: 60vw;
-  height: 10vw;
-  background-color: white;
-  text-decoration: none;
-  border-radius: 20px; */
-
-
   align-items: center;
-  
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
   display: flex;
   /* font-family: Poppins; */
   font-weight: 400;
-  margin-top: 32px;
-  padding: 6px 35px;
+  margin-top: 2.5rem;
+  padding: 1rem 2.5rem;
   text-decoration: none;
   transition: all .2s ease-in-out;
   z-index: 200;
-  color:#1b0b5c;
+  color: #1b0b5c;
   cursor: pointer;
 }
 
@@ -974,6 +1000,7 @@ body {
 .course-logo-font,
 .course-logo-font:focus {
   font-family: "Space and Astrology", serif;
+
   font-size: 25px;
   color: #6858a8;
   /* text-shadow: 2px 2px 0 #3A2689; */
@@ -1082,7 +1109,7 @@ body {
   width: 270px;
   height: 270px;
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 30px 30px 0px 0px;
 }
 
 .ta-card-inner {
