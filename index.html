@@ -37,9 +37,6 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
 
             <div role="list" class="flex-row margin-centered toggle-flex">
-
-
-
                 <div class="large-hidden" id="navbar-open-button" style="color: white; ">
                     <div id="mobile-navbar-container">
                         <div class="large-hidden" id="navbar-open-button">
@@ -49,7 +46,7 @@
                     </div>
                 </div>
 
-                <h3 class="small-hidden" id="mobile-title">cs0320</h3> 
+                
                 <div class="hidden-weak large-hidden" id="navbar-close-button" style="color: white;">
                     <div id="mobile-navbar-container">
                         <div class="large-hidden" id="navbar-close-button">
@@ -69,6 +66,7 @@
                     <div role="listitem" class="width-max"><a class="m-1 page-scroll"
                             href="#assignments">Assignments</a></div>
                 </div>
+                <h3 class="small-hidden" id="mobile-title">cs0320</h3> 
                 <!-- <div class="flex-row justify-center align-center basis-33 small-hidden toggle-target small-flex-column">
                     <a href="#page-top" class="course-logo-font page-scroll">CSCI 0320</a>
                 </div> -->
@@ -89,45 +87,720 @@
             <div id='stars2'></div>
             <div id='stars3'></div>
         </section> -->
+    <header class="intro">
+        <div class="intro-body" style="
+        background: radial-gradient(ellipse at bottom, #251a50 0%, #1b0b5c 100%);
+overflow: hidden;;
+    ">
+            <div id='stars'></div>
+            <!-- <div id='stars2'></div> -->
+            <!-- <div id='stars3'></div> -->
+            <div id="constellation-container" style="display:flex; gap: 0; opacity: 0.3;">
+                <img id="home-sun" class="intro-img drawing" src="img/full-conste.png"
+                style="border-radius:20px;width:100%;transform: scale(1.1);">
+                <!-- <img id="home-sun" class="intro-img drawing" src="img/constellations.svg"
+                style="border-radius:20px;width:100%;transform: scale(1.2);margin-left: -47rem;"> -->
+            </div>
+            <div style="   
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;">
+                <h1 class="brand-heading" style="color: #f9f5da;
+                ">
+                  Introduction to Software Engineering
+              </h1>
+              <p class="intro-text" style="color: #f9f5da; ">
+                          CSCI 0320 focuses on designing, building, testing, and maintaining systems collaboratively.
+                          It covers programming techniques (using Java and TypeScript with various frameworks),
+                          object-oriented design, advanced testing (e.g., fuzz testing), debugging approaches,
+                          and tools such as source control systems. The course concludes with a major group project
+                          that students gather requirements for, then design and implement themselves.
+                      </p>
 
-        <header class="intro">
-            <div class="intro-body" style="
-            background: radial-gradient(ellipse at bottom, #251a50 0%, #1b0b5c 100%);
-  overflow: hidden;;
-        ">
-                <div id='stars'></div>
-                <div id='stars2'></div>
-                <div id='stars3'></div>
-                <!-- <div class="clouds"></div> -->
+            </div>
+            
+            
+            <!-- <div class="clouds"></div> -->
 
-                <div class="container">
+            <div class="container">
+                <div class="flex-col align-center">
+                    <!-- <div class="col col-md-8 justify-content-center drawings-box" style="width:100%;">
+                        <img id="home-moon" class="intro-img drawing" src="img/moon-white.png"
+                            style="border-radius:20px;width:15vw;">
+                        <img id="home-sun" class="intro-img drawing" src="img/constellations.svg"
+                            style="border-radius:20px;width:15vw;">
+                        <img id="home-planet" class="intro-img drawing" src="img/planet-white.png"
+                            style="border-radius:20px;width:15vw">
+                    </div> -->
+                    <!-- <p class="intro-text" style="color: #f9f5da;position: absolute;
+                    top: 65%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                  ">
+                        CSCI 0320 focuses on designing, building, testing, and maintaining systems collaboratively.
+                        It covers programming techniques (using Java and TypeScript with various frameworks),
+                        object-oriented design, advanced testing (e.g., fuzz testing), debugging approaches,
+                        and tools such as source control systems. The course concludes with a major group project
+                        that students gather requirements for, then design and implement themselves.
+                    </p> -->
+                    <!-- <a href="https://github.com/cs0320/assignment-zero" class="intro-button" style="position: absolute;
+                    top: 80%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                  ">Assignment Zero (Optional)</a> -->
+                    
+                </div>
+            </div>
+        </div>
+</div>
+</header>
+    <!-- put all that stuff here -->
+    <img id="divider" class="divider" src="img/divider.png">
+    <section id="course-info">
+        <div class="row">
+            <div class="col-md-12">
+                
+                <h2 class="section-title">Course Information
+                </h2>
+                <!--        <section id="course-info">-->
+                <!--            <div class="row section-header">-->
+                <!--                <div class="col-md-6 info-box-opaque">-->
+                <!--                    <h2>Course Information</h2>-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p>
+                        cs0320 is taught by <a href="http://www.cs.brown.edu/~tbn/">Tim Nelson</a>.
+                        Lectures are held every Tuesday and Thursday from 1:00 to 2:20 PM at
+                        <a href="http://brown.edu/Facilities/Facilities_Management/maps/index.php#building/METRSCHBLD">Metcalf
+                            Research Building AUD</a>,
+                        and are also recorded on <a
+                            href="https://brown.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22107a233a-0a7e-40bf-a371-af090025ed42%22">Panopto</a>
+                        and will be uploaded after each lecture.
+                    </p>
+                    <p>
+                        Official prerequisites for cs0320 include one of
+                        {<a href="https://cs.brown.edu/courses/csci0160/">cs0160</a>,
+                        <a href="https://cs.brown.edu/courses/csci0180/">cs0180</a>,
+                        <a href="https://cs.brown.edu/courses/csci0190/">cs0190</a>,
+                        <a href="https://cs.brown.edu/courses/csci0200/">cs0200</a>}.
+                        Familiarity with Java serves as a soft prerequisite; if you don't feel comfortable with Java
+                        or object-oriented programming yet,
+                        you may find it helpful to take
+                        <a href="https://cs.brown.edu/courses/csci0200/">cs0200</a> before taking cs0320.
+                    </p>
 
-                    <div class="flex-col align-center">
-                        <div class="col col-md-8 justify-content-center drawings-box" style="width:100%;">
-                            <img id="home-moon" class="intro-img drawing" src="img/moon-white.png"
-                                style="border-radius:20px;width:15vw;">
-                            <img id="home-sun" class="intro-img drawing" src="img/sun-white.png"
-                                style="border-radius:20px;width:15vw;">
-                            <img id="home-planet" class="intro-img drawing" src="img/planet-white.png"
-                                style="border-radius:20px;width:15vw">
-                        </div>
-                        <h1 class="brand-heading" style="color: #f9f5da;padding-top: 0vh;">
-                            Introduction to Software Engineering
-                        </h1>
-                        <p class="intro-text" style="color: #f9f5da;">
-                            CSCI 0320 focuses on designing, building, testing, and maintaining systems collaboratively.
-                            It covers programming techniques (using Java and TypeScript with various frameworks),
-                            object-oriented design, advanced testing (e.g., fuzz testing), debugging approaches,
-                            and tools such as source control systems. The course concludes with a major group project
-                            that students gather requirements for, then design and implement themselves.
-                        </p>
-                        <a href="https://github.com/cs0320/assignment-zero" class="intro-button">Assignment Zero (Optional)</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <blockquote>
+                        "Software engineering is about more than just programming. Good engineers often spend more
+                        time reading and reviewing code than writing it. If you're skeptical, read <a
+                            href="https://linux.slashdot.org/story/20/07/03/2133201/linus-torvalds-i-do-no-coding-any-more">this
+                            short statement</a> by Linus Torvalds, one of the world's most famous programmers.
+                        <br><br>
+                        Linus isn’t on vacation. He's not taking it easy. And yet he
+                        spends most of his engineering time on reviewing other peoples' code. Let's stop pretending
+                        that "writing a lot of code" is the only metric that matters, and instead ask about what
+                        else should be important. Things like:
+                        <br><br>
+                        - How do you know that a program works? What if it's a program you didn't write?
+                        <br>
+                        - How do you know that you're writing the right program in the first place?
+                        <br>
+                        - How can you design to maximize the possibility of re-use?
+                        <br>
+                        - How can you make your code safe from bugs (yours and others')?
+                        <br>
+                        - How can you write code that's easy to understand?
+                        <br>
+                        - How do people write software collaboratively in a distributed way?
+                        <br>
+                        - Which unusual algorithmic ideas, new technologies, and linguistic tools should you know
+                        about as an engineer today?
+                        <br><br>
+                        This course is about all of that. You'll still write a lot of code, too, but we will
+                        embrace a more professional perspective. You're not just trying to pass the course's test
+                        suite;
+                        you’re trying to build software for real.
+                        "
+                    </blockquote>
+                    <tagline>– cs0320 Manifesto via the <a
+                            href="https://docs.google.com/document/d/1aGlp-aNEBju5Efc5_oJHwsfx2ZLIxHZbxzdhpmAkFoA/edit?usp=sharing">Course
+                            Missive</a></tagline>
+                </div>
+            </div>
+            <!-- grading scheme -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 style="text-align: center;font-size: 3rem;">Grading</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <p>
+                            CSCI 0320 remains mandatory S/NC this semester and will be using a learning-goals focused grading system. You'll check off ("earn badges") for different learning categories in every sprint and you’ll need a certain number of badges for each category.
+
+This style of grading is also called "mastery-based" or "standards-based". Both of those terms invite misinterpretation, so we'll tend to speak of "demonstrating command" of a given learning category instead. 
+<br><br>
+Barring special circumstances, badges can only be earned for work on the current sprint. After a sprint's code freeze has occurred, the code cannot be "upgraded" to earn that badge for that sprint. Instead, show improvement on the next sprint's objectives. For example, if a student doesn't earn the "unit testing" badge on the CSV sprint they should focus on their unit testing for Echo.
+
+                           </p>
+                    </div>
+                </div>
+
+            <!-- Documents & Guides -->
+            <div id="docs-and-guides" class="row inset-box">
+                <div class="info-box-opaque">
+                    <div class="col-md-8 col-sm-12">
+                        <h3 style="text-align: center;font-size: 3rem;">Resources</h3>
+                        <p>Check out the following useful documents for questions you have about course
+                            organization and logistics.</p>
+
+                        <ul class="col-md-12">
+                            <li><a target="_blank"
+                                    href="https://docs.google.com/document/d/1aGlp-aNEBju5Efc5_oJHwsfx2ZLIxHZbxzdhpmAkFoA/edit?usp=sharing">Course
+                                    Missive</a></li>
+                            <li><a target="_blank"
+                                    href="https://docs.google.com/document/d/194-XnJpSYEKj3UEoYc1FoPdFHQB5Bk24SxLltUQ2xQo/edit?usp=sharing">Syllabus</a>
+                            </li>
+                            <li><a target="_blank"
+                                    href="https://www-oreilly-com.revproxy.brown.edu/library/view/effective-java/9780134686097/?ar">
+                                    Textbook
+                                </a></li>
+                            <li><a target="_blank"
+                                    href="https://docs.google.com/forms/d/e/1FAIpQLSfxua6Ni9Ho1JVEKxW6KfcbzbMs9XaWKL4H-OLXPidybZvFaw/viewform">Anonymous
+                                    Feedback</a></li>
+                            <li><a target="_blank" href='https://edstem.org/us/courses/31923/discussion/2445539'>edStem</a></li>
+                            <li><a target="_blank"
+                                    href='https://docs.google.com/document/d/1gp96MAm-hyR6Is3EBY_KU8x9EH6p8drkL4NlTvbBTj4/edit?usp=sharing'>Setup
+                                    Guide</a></li>
+                            <li><a target="_blank"
+                                    href='https://docs.google.com/document/d/1NGIIo7m05W9YzRIhdHeYt08BCyteTvikvM3I89APehI/edit'>Documentation
+                                    and Style Guide</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-    </div>
-    </header>
-    <!-- put all that stuff here -->
+        </div>
+    </section>
+
+    <img id="divider" class="divider" src="img/divider.png">
+
+    <!-- Assignments Section -->
+    <section id="assignments">
+        <div class="container content-section">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Projects -->
+                    <h3 class="section-title">Projects</h3>
+                    <p>Project handouts are released at 2:20 PM ET on the specified release day.
+                        Code submissions are due in Gradescope by 7:30 PM ET on the specified code freeze date.
+                        Demos will take place sometime within the demo window, depending on your availabilities.
+                        Review assignments are out on 9:00 AM ET on the start date in the review window and are due by
+                        1:00 PM ET on the end date in the review window.</p>
+
+                    <p>For your handin to be graded, you must have completed the beginning of semester reading quiz. To
+                        check if you have turned one in, please check <a href="https://forms.gle/zqnccNviNiWu6mSz9">this
+                            form</a>.
+                    </p>
+                    <table class="assignment">
+                        <tr>
+                            <th>Project</th>
+                            <th>Release</th>
+                            <th>Code Freeze</th>
+                            <th>Demos</th>
+                            <th>Review</th>
+                        </tr>
+                        <tr>
+                            <td>Policy Quiz</td>
+                            <td>1/26</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Onboarding form</td>
+                            <td>1/26</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/cs0320/assignment-zero">Sprint 0 (Optional)</a></td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Sprint 1: CSV</td>
+                            <td>1/26</td>
+                            <td>2/3</td>
+                            <td>2/4–2/5</td>
+                            <td>2/6–2/9</td>
+                        </tr>
+                        <tr>
+                            <td>Sprint 2: Echo</td>
+                            <td>2/9</td>
+                            <td>2/17</td>
+                            <td>2/18-2/19</td>
+                            <td>2/20-2/23</td>
+                        </tr>
+                        <tr>
+                            <td>Sprint 3: Server</td>
+                            <td>2/23</td>
+                            <td>3/3</td>
+                            <td>3/4-3/5</td>
+                            <td>3/6-3/9</td>
+                        </tr>
+                        <tr>
+                            <td>Sprint 4: REPL</td>
+                            <td>3/9</td>
+                            <td>3/17</td>
+                            <td>3/18-3/19</td>
+                            <td>3/22-3/24</td>
+                        </tr>
+                        <tr>
+                            <td>Sprint (Capstone): Maps</td>
+                            <td>3/24</td>
+                            <td>3/31</td>
+                            <td>4/1-4/2</td>
+                            <td>3/24-4/2</td>
+                        </tr>
+                        <tr>
+                            <td>Term Project</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+
+                    <h3 class="section-title">Gear-ups</h3>
+                    <p>
+                        Gear-ups are interactive, lecture-style sections led by TAs that reinforce content from lecture
+                        with a specific emphasis on applying concepts to the current sprint. Gear-ups are held on the
+                        Thursday and Friday after each project's release. Attendance is mandatory, and gear-up sections
+                        will be assigned after shopping period ends. You can find the schedule for gear-up sections on
+                        <a href="#hours">the calendar</a>.
+                    </p>
+                    <table class="gear-up">
+                        <tr>
+                            <th>Date</th>
+                            <th>Topic</th>
+                            <th>Slides</th>
+                            <th>Recording</th>
+                        </tr>
+                        <tr>
+                            <td>1/26–1/27</td>
+                            <td>Sprint 0: CSV</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2/9–2/10</td>
+                            <td>Sprint 1: Echo</td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <td>2/23–2/24</td>
+                            <td>Sprint 2: Server</td>
+                            <td>Slides</td>
+                            <td>Recording</td>
+
+                        </tr>
+                        <tr>
+                            <td>3/9–3/10</td>
+                            <td>Sprint 3: REPL</td>
+                            <td>Slides</td>
+                            <td>Recording</td>
+                        </tr>
+                        <tr>
+                            <td>3/23–3/24</td>
+                            <td>Sprint 4: Maps</td>
+                            <td>–</td>
+                            <td>–</td>
+                        </tr>
+                        <tr>
+                            <td>11/3–11/4</td>
+                            <td>Term Project</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </table>
+                    <h3 class="section-title">Discussion Sections</h3>
+                    <p>
+                        Discussion sections are optional sessions facilitated by our STAs that involve critical
+                        investigation and debate on topics at the intersection of software engineering and ethics.
+                        To be considered for an S with Distinction, you must attend and participate in both of these
+                        sections. You can find the schedule for discussion sections on
+                        <a href="#hours">the calendar</a>.
+                    </p>
+                    <table class="gear-up">
+                        <tr>
+                            <th>Date</th>
+                            <th>Topic</th>
+                            <th>Slides</th>
+                            <th>Recording</th>
+                        </tr>
+                        <tr>
+                            <td>TBD</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>–</td>
+                        </tr>
+
+                        <tr>
+                            <td>TBD</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>–</td>
+                        </tr>
+                    </table>
+                    
+
+                    <h3 class="section-title">Collab Sections</h3>
+                    <p>In collab sections, students will bring their bugs to a room of other classmates assigned to
+                        serve as their debugging partners and, in pairs, go through the <a
+                            href="https://hackmd.io/@brown-csci0320/BJKCtyxxs">debugging recipe</a> (explored in
+                        lecture-note form in the <a href="https://hackmd.io/@brown-csci0320/H1ONPLN25">debugging
+                            manifesto</a>) to practice debugging together. The goal is to give students the scaffolding
+                        necessary to grow their debugging, communication, and collaboration skills while under
+                        the supervision of the course staff.</p>
+
+                    <p>Every student is required to serve one hour per week as a debugging partner. Collab sections will
+                        be assigned after shopping period ends. You can find the schedule for collab sections on
+                        <a href="#hours">the calendar</a>.
+                    </p>
+
+                    <p>You can find the Collab Section Student Guide at the link below,
+                        which details the workflow for coming to collab section for help as well as the workflow for
+                        serving as a debugging partner.</p>
+                    <br>
+                    <div class="button-container" style="display: flex; justify-content:center">
+                        <a href="https://docs.google.com/document/d/1OAgCh4MY4HYKg3jSlDckJA2YEupSmdhIY6FIp-QlXmU/edit#"
+                            target="_blank">
+                            <div class="debugging-button">
+                                Collab Section Student Guide
+                            </div>
+                        </a>
+                    </div>
+                    <div id="docs-and-guides" class="row inset-box">
+                        <div class="info-box-opaque">
+                            <div class="col-md-8 col-sm-12">
+                                <h3 style="text-align: center;font-size: 3rem;">Important Reminders</h3>
+                                <ul class="col-md-12">
+                                    <li>Arrive at your assigned collab section at the proper time every other week — swap form linked <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScnQRUqa4voXzabxayLwQoc7oCOF8yqrKViFUniW60G7MxxVg/viewform">here.</a>
+                                    <li>Fill out the <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSehA2v6_Uf64VX41Dd0d4h8BM8VqtJ2F5ZndGJ_kBtX-tbFzw/viewform">Debugging Partner Form</a> for each student you help</li>
+                                    <li>Remember, you only need to spend 20 minutes per student + go through one iteration of the <a href="https://hackmd.io/@brown-csci0320/BJKCtyxxs">Debugging Recipe</a></li>
+                                    <li>If you're the one with a bug, make sure to sign up for "Debugging Partner Queue" on <a target="_blank" href="http://hours.cs.brown.edu">hours.cs.brown.edu</a></li>
+                                    <li><b style="font-weight: 800;">Make sure you have a concrete question.</b> If you have a question about getting started, design, or prototyping, please attend <a href="#hours">conceptual hours</a> instead.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="section-title">Conceptual Hours</h3>
+                    <p>
+                        Conceptual hours are for questions about getting started, design, or prototyping. We intend for conceptual hours to be a more collaborative space between students and TAs, but not a place for debugging code. Please keep in mind that TAs will NOT look at code. If you have a concrete question or bug, please attend one of the <a href="#hours">collab sections.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lectures -->
+
+    <section id="lectures">
+        <div class="container content-section">
+            <div class="row">
+                <div>
+                    <h2 class="section-title">Lectures</h2>
+                    <div class="col-md-12">
+                        <p>Lectures are held every Tuesday and Thursday from 1:00 PM to 2:20 PM ET at
+                            <a
+                                href="http://brown.edu/Facilities/Facilities_Management/maps/index.php#building/METRSCHBLD">Metcalf
+                                Research Building AUD</a>,
+                            and are also recorded on <a
+                                href="https://brown.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22107a233a-0a7e-40bf-a371-af090025ed42%22">Panopto</a>
+                            and will be uploaded after each lecture.
+                        </p>
+                        <p>Any readings from Effective Java and Design Patterns can be accessed through Safari Books
+                            Online.
+                            To do so, follow the steps below:
+                        <ol>
+                            <li> Navigate <a href="https://www.oreilly.com/library/view/temporary-access/"
+                                    target="_blank" rel="noopener noreferrer">here</a> to setup your Brown affiliated
+                                account.
+                            </li>
+                            <li> Once you've done this, you can access the readings for
+                                <a href="https://learning.oreilly.com/library/view/effective-java-3rd/9780134686097/"
+                                    target="_blank" rel="noopener noreferrer">Effective Java</a>
+                                and <a
+                                    href="https://learning.oreilly.com/library/view/design-patterns-elements/0201633612/"
+                                    target="_blank" rel="noopener noreferrer">Design Patterns</a>.
+                            </li>
+                        </ol>
+                        </p>
+                        <table class="lecture">
+                            <tr>
+                                <th>Date<span style="white-space: pre;"> </span></th>
+                                <th>Topic</th>
+                                <th>Resources</th>
+                                <th>Code</th>
+                                <th>Week's Reading</th>
+                            </tr>
+                            <tr>
+                                <td>1/26<span style="white-space: pre;"> </span></td>
+                                <td>First Day of Class</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <!-- <tr>
+                                <td>1/31<span style="white-space: pre;"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2/2<span style="white-space: pre;"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2/7<span style="white-space: pre;"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2/9<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2/14<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2/16<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2/23<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2/28<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3/2<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3/7<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3/9<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3/14<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3/16<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3/21<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3/23<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4/4<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4/6<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4/11<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4/13<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4/18<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4/20<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4/25<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4/27<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>5/2<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>5/4<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>5/9<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>5/11<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>5/16<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>5/18<span style="white-space: pre"> </span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>  -->
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Hours -->
+    <section id="hours">
+        <div class="container content-section">
+            <h2 class="section-title">Calendar</h2>
+            <div class="row">
+
+                <!-- Regular hours -->
+                <div class="col-md-12">
+                    <div class="hours-container">
+                        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=Y185ZTFkZjgxNmVmNmY0NDU3Y2Y0N2YyNTZjZWZiOTM1YjA0YTVjMzFhYTJkNGFiMmI0OGRhZTNiMGZkMmRlN2ZmQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y19jNGFmNWIyYTdmODAzOGZkMDA0ZDE5Y2ZlMWYwMTkyNmJmN2Q2MzU0ODA2NWM0MWM4OTA3NDEyMzAwNWU1ZDYxQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y182MTU1MmQ1YjhhMTA0NWI4YTliMWY3NzA0YzE0ZDIxZTc2NGRhYjViNzljYzQxNmVjM2M5ZjgyYTJkYjdiOTZkQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y19iYWYxZWI3NzYwM2Y4YTFmNmMwZjBjZDkwZjBkZTkxMTFlYzRkMDJjNGZkNWY3ZjgxZjI1MjY4ODFlNGE1ZmE0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y181NDU4ODQ0MjkzNTQ0NGNkYjEyZDYxMzkxM2FmY2VjNGQxYTBjM2M1NGM2NzNmMDFhOGJlOTJhNWIwNDQ4YzUwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23D81B60&color=%23B39DDB&color=%23c6b0ca&color=%234285F4&color=%23C0CA33" style="border:solid 1px #777" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                    <h3 class="section-title">Talk to Tim</h3>
+                    <p>
+                        Talk to Tim via <a href="https://brown.zoom.us/my/tim.browncs">Zoom</a> on Thursday from 12
+                        PM–12:50 PM EST.
+                        Tim will also be holding an info session during the first week of class on Friday.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Staff -->
     <section id="staff">
         <div class="container content-section staff">
@@ -221,9 +894,7 @@
                                 <div class="ta-card-zodiac">Aquarius</div>
                                 <div class="ta-card-hometown">Hometown: Los Gatos, CA</div>
                                 <div class="ta-card-bio">
-                                    Hi I'm Sam and I'm a junior studying CS! I enjoy collaging and watching Love Island
-                                    UK or generic rom coms on my free time :) I'm also an astrology enthusiast so let me
-                                    know if you want to talk birth charts. I'm excited to meet you all!
+                                    Hi I'm Sam and I'm a junior studying CS! I enjoy collaging and going for walks :) I'm also an astrology enthusiast so let me know if you want to talk birth charts. I'm excited to meet you all!
                                 </div>
                             </div>
                         </div>
@@ -516,9 +1187,7 @@ I'm a sophomore studying CS from a cute little town outside Boston. On campus, I
                                 <div class="ta-card-hometown">Hometown: New York, NY
                                 </div>
                                 <div class="ta-card-bio">
-                                    Hey! I’m a senior from nyc studying apma + cs. Outside of the classroom I enjoy
-                                    playing tennis, cooking, and have recently been getting back into casual games of
-                                    poker and chess.
+                                    Hi! I'm a sophomore from New York City concentrating in computer science. I love spicy food, playing violin, running (but not long distances), and gooey chocolate chip cookies. Excited to meet you all!
                                 </div>
                             </div>
                         </div>
@@ -646,6 +1315,30 @@ I'm a sophomore studying CS from a cute little town outside Boston. On campus, I
                     </div>
                 </div>
 
+                <div class="ta-card">
+                    <div class="ta-card-inner">
+                        <div class="ta-card-front">
+                            <img class="ta-picture" src="img/staff/dani.jpg">
+                            <div class="ta-card-front-text">
+                                <div class="ta-card-name">Dani Tamesis</div>
+                                <div class="ta-card-login">dtamesis</div>
+                            </div>
+                        </div>
+                        <div class="ta-card-back">
+                            <div class="ta-card-info-container">
+                                <div class="ta-card-name back-name">Dani Tamesis</div>
+                                <div class="ta-card-pronouns">she/her/hers</div>
+                                <div class="ta-card-zodiac">Libra</div>
+                                <div class="ta-card-hometown">Hometown: Toledo, OH
+                                </div>
+                                <div class="ta-card-bio">
+                                    Hi everyone! My name's Dani and I'm from Toledo, OH. I'm a senior concentrating in Health & Human Biology and Computer Science. Outside academics, you can find me climbing, practicing guitar, or soaking in the sun. Chat with me anytime :)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         
@@ -662,6 +1355,7 @@ I'm a sophomore studying CS from a cute little town outside Boston. On campus, I
                 </p>
             </div>
         </footer>
+
 
         <!-- Javascript files -->
         <script src="js/jquery.js"></script>

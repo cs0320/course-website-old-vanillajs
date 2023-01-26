@@ -327,6 +327,10 @@ th {
   .intro .brand-heading {
     padding-top: 8vh !important;
   }
+
+  .drawing {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -380,7 +384,7 @@ th {
 }
 
 #mobile-title {
-
+  /* color: #f9f5da; */
 }
 
 .info-box-opaque {
@@ -667,6 +671,8 @@ footer a {
   .small-hidden {
     display: none;
   }
+
+  
 }
 
 @media (min-width: 768px) {
@@ -792,6 +798,7 @@ footer {
   z-index: 200;
   color: #1b0b5c;
   cursor: pointer;
+              
 }
 
 .intro-button:hover {
