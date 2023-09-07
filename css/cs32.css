@@ -1400,3 +1400,8 @@ body {
     transform: translateY(-2000px);
   }
 }
+
+.main-hover:hover {
+  color: rgb(97, 83, 209);
+  text-decoration: underline;
+}
